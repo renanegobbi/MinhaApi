@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MinhaApi.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MinhaApi.Api.BadRequestApiResponse">
+            <summary>
+            Response padrão da API para o erro HTTP 400
+            </summary>
+        </member>
+        <member name="T:MinhaApi.Api.ApiResult">
+            <summary>
+            Resultado padrão para todas as rotas da API
+            </summary>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.FornecedorController.ObterFornecedorPorId(System.Int32)">
+            <summary>
+            Obtém um fornecedor a partir do seu ID.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.FornecedorController.ListarFornecedor(MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel)">
+            <summary>
+            Obtém os fornecedores baseados nos parâmetros de consulta.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.FornecedorController.SalvarFornecedor(MinhaApi.Api.ViewModels.Fornecedor.CadastrarFornecedorViewModel)">
+            <summary>
+            Salva um fornecedor na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.FornecedorController.AlterarFornecedor(MinhaApi.Api.ViewModels.Fornecedor.AlterarFornecedorViewModel)">
+            <summary>
+            Altera um fornecedor na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.FornecedorController.ExcluirFornecedor(System.Int32)">
+            <summary>
+            Exclui um fornecedor na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.ProdutoController.ObterProdutoPorId(System.Int32)">
+            <summary>
+            Obtém um produto a partir do seu ID.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.ProdutoController.ListarProduto(MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel)">
+            <summary>
+            Obtém os produtos baseados nos parâmetros de consulta.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.ProdutoController.SalvarProduto(MinhaApi.Api.ViewModels.Produto.CadastrarProdutoViewModel)">
+            <summary>
+            Salva um produto na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.ProdutoController.AlterarProduto(MinhaApi.Api.ViewModels.Produto.AlterarProdutoViewModel)">
+            <summary>
+            Altera um produto na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="M:MinhaApi.Api.Controllers.v1.ProdutoController.ExcluirProduto(System.Int32)">
+            <summary>
+            Exclui um produto na base de dados.
+            </summary>
+            <remarks>Observações:
+            <ul>
+                <li>Para acessar essa rota, não é necessário estar logado no sistema.</li>
+            </ul>
+            </remarks>
+        </member>
+        <member name="T:MinhaApi.Api.Filters.CustomModelStateValidationFilterAttribute">
+            <summary>
+            Filtro que extrai as mensagens do ModelState e coloca no padrão de saida da API.
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.Swagger.Response.Sucesso">
+            <summary>
+            Indica se houve sucesso no request.
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.Swagger.Response.Mensagens">
+            <summary>
+            Mensagens retornadas.
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.Swagger.Response.Retorno">
+            <summary>
+            Objeto retornado no atendimento do request
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.Id">
+            <summary>
+            ID do Fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.Nome">
+            <summary>
+            Nome do fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.Descricao">
+            <summary>
+            Descrição do fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.Cnpj">
+            <summary>
+            Cnpj do fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.Ativo">
+            <summary>
+            Situação do fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.PaginaIndex">
+            <summary>
+            Index da página que deseja obter (iniciando por 1)
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.PaginaTamanho">
+            <summary>
+            Quantidade de registros que deverão ser retornados por página
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.OrdenarPor">
+            <summary>
+            Nome da propriedade que se deseja ordernar os registros encontrados
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Fornecedor.ConsultarFornecedorViewModel.OrdenarSentido">
+            <summary>
+            Sentido da ordenação que será utilizado ordernar os registros encontrados (ASC para crescente; DESC para decrescente)
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.Id">
+            <summary>
+            ID do Produto
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.FornecedorId">
+            <summary>
+            ID do fornecedor
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.DataFabricacao">
+            <summary>
+            Data de fabricação
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.DataValidade">
+            <summary>
+            Data de validade
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.Ativo">
+            <summary>
+            Status de ativação 
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.PaginaIndex">
+            <summary>
+            Index da página que deseja obter (iniciando por 1)
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.PaginaTamanho">
+            <summary>
+            Quantidade de registros que deverão ser retornados por página
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.OrdenarPor">
+            <summary>
+            Nome da propriedade que se deseja ordernar os registros encontrados
+            </summary>
+        </member>
+        <member name="P:MinhaApi.Api.ViewModels.Produto.ConsultarProdutoViewModel.OrdenarSentido">
+            <summary>
+            Sentido da ordenação que será utilizado ordernar os registros encontrados (ASC para crescente; DESC para decrescente)
+            </summary>
+        </member>
+    </members>
+</doc>
