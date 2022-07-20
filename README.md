@@ -45,7 +45,7 @@ A interface do Swagger, deste projeto, permite as seguintes funcionalidades para
 - Obter os produtos baseados nos parâmetros de consulta, com a resposta paginada.
 - Salvar um produto na base de dados.
 - Alterar um produto na base de dados.
-- Exclui um produto na base de dados. A exclusão é lógica, atualizando o campo Ativo para true ou false.
+- Exclui um produto na base de dados. A exclusão é lógica, atualizando o campo Ativo para false.
 
 A gestão de fornecedores possui as mesmas funcionalidades descritas acima em suas rotas.
 
