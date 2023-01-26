@@ -97,6 +97,7 @@ namespace MinhaApi.Data.Repositorios
 
         public void DesativarProduto(Produto produto)
         {
+            produto.Ativo = false;
             DbSet.Update(produto);
         }
     }
