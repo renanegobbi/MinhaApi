@@ -88,6 +88,7 @@ namespace MinhaApi.Data.Repositorios
 
         public void DesativarFornecedor(Fornecedor fornecedor)
         {
+            fornecedor.Ativo = false;
             DbSet.Update(fornecedor);
         }
 
